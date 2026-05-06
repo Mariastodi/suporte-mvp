@@ -1,0 +1,39 @@
+:root {
+  --primary: #4f46e5;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+  --bg: #f3f4f6;
+}
+
+body { background: var(--bg); margin: 0; }
+
+.login-container { height: 100vh; display: flex; align-items: center; justify-content: center; }
+.login-card { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); width: 350px; text-align: center; }
+.login-card input { width: 100%; padding: 12px; margin: 15px 0; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box;}
+.login-card button { width: 100%; padding: 12px; background: var(--primary); color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; }
+
+.main-header { background: white; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e5e7eb; }
+.user-info { display: flex; align-items: center; gap: 12px; }
+.avatar { width: 35px; height: 35px; background: var(--primary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; }
+
+.content { padding: 2rem; max-width: 1200px; margin: 0 auto; }
+.section-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; }
+
+.modern-table { width: 100%; background: white; border-radius: 8px; border-collapse: collapse; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+.modern-table th { background: #f9fafb; padding: 12px 15px; text-align: left; color: #6b7280; font-size: 13px; text-transform: uppercase; }
+.modern-table td { padding: 15px; border-top: 1px solid #f3f4f6; }
+
+.status-badge, .status-text { padding: 4px 10px; border-radius: 20px; font-size: 12px; font-weight: 600; }
+.aberto { background: #fef3c7; color: #92400e; }
+.em-atendimento { background: #dbeafe; color: #1e40af; }
+.concluido { background: #d1fae5; color: #065f46; }
+
+.btn-atender { background: #eff6ff; color: #2563eb; border: 1px solid #bfdbfe; padding: 5px 10px; border-radius: 4px; cursor: pointer; margin-right: 5px; }
+.btn-concluir { background: #ecfdf5; color: #059669; border: 1px solid #a7f3d0; padding: 5px 10px; border-radius: 4px; cursor: pointer; }
+.btn-primary { background: var(--primary); color: white; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; }
+
+.ticket-form { background: white; padding: 2rem; border-radius: 8px; display: flex; flex-direction: column; gap: 15px; max-width: 600px; }
+.ticket-form input, .ticket-form select, .ticket-form textarea { padding: 12px; border: 1px solid #ddd; border-radius: 6px; }
+.ticket-form textarea { height: 120px; }
+.btn-submit { background: var(--success); color: white; border: none; padding: 15px; border-radius: 6px; font-weight: bold; cursor: pointer; }
